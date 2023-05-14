@@ -39,7 +39,6 @@ class Program
             password[i] = charSet[random.Next(charSet.Length)];
         }
 
-        // Shuffle the password characters to make it more secure
         return new string(password.OrderBy(x => random.Next()).ToArray());
     }
 
